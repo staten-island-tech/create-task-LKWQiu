@@ -1,0 +1,9 @@
+.NewCard{
+    margin: 10px;
+    width: 20%;
+    height: 150%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+}
