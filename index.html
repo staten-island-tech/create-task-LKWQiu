@@ -3,8 +3,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width='device-width', initial-scale=1.0">
     <title>JANKY PLANNER</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<bodys>
+<body>
     <form class="form1" id="form1" >
         <label for = "Subject">Subject:</label>
         <input type = "text" class = "Subject" id="Subject"/>
@@ -15,9 +16,26 @@
         <label for = "DueDate">DueDate:</label>
         <input type = "text" class = "DueDate" id="DueDate"/>
         <br>
-        <input type = "submit" value = "Click to Submit" id = "submit" />
+        <div class="dropdown">
+            <button class="dropbtn">Dropdown</button>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+        </div>
+        <br>
+        <input type = "submit" value = "Add to Calander" id = "submit" />
     </form>
-    <div id="main"></div>
+    <div id="main" class="main">
+        <div id="Monday"></div>
+        <div id="Tuesday"></div>
+        <div id="Wednesday"></div>
+        <div id="Thursday"></div>
+        <div id="Friday"></div>
+        <div id="Saturday"></div>
+        <div id="Sunday"></div>
+    </div>
     <script src="main.js"></script>
 </body>
 </html>
