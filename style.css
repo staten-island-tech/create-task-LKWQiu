@@ -1,4 +1,10 @@
-
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    flex-direction: row, column;
+    justify-content: center;
+}
 .NewCard{
     margin: 10px;
     width: 20%;
@@ -21,7 +27,7 @@
 }
 .form1{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    width: 50%;
+    width: 30%;
     height: auto;
     text-align: center;
     cursor: pointer;
@@ -44,11 +50,18 @@
     border-style: solid;
     border-color: brown;
 }
-/* Dropdown Button */
+.DAY{
+    width: 12%;
+    border-radius: 10px;
+    border-color: black;
+    border-style: solid;
+    height: auto;
+    margin: 8px;
+}
+ /* Dropdown button */    
 .dropbtn {
-    background-color: #04AA6D;
+    background-color: #222423;
     color: white;
-    padding: 16px;
     font-size: 16px;
     border: none;
   }
@@ -78,10 +91,10 @@
   }
   
   /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #ddd;}
+  .dropdown-content a:hover {background-color: #aca7a7;}
   
   /* Show the dropdown menu on hover */
   .dropdown:hover .dropdown-content {display: block;}
   
   /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+  .dropdown:hover .dropbtn {background-color: #222423;}

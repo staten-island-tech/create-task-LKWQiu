@@ -6,35 +6,41 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form class="form1" id="form1" >
-        <label for = "Subject">Subject:</label>
-        <input type = "text" class = "Subject" id="Subject"/>
-        <br>
-        <label for = "Work">Work:</label>
-        <input type = "text" class = "Work" id="Work"/>
-        <br>
-        <label for = "DueDate">DueDate:</label>
-        <input type = "text" class = "DueDate" id="DueDate"/>
-        <br>
-        <div class="dropdown">
-            <button class="dropbtn">Dropdown</button>
-            <div class="dropdown-content">
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
+    <div class="container">
+        <form class="form1" id="form1" >
+            <label for = "Subject">Subject:</label>
+            <input type = "text" class = "Subject" id="Subject"/>
+            <br>
+            <label for = "Work">Work:</label>
+            <input type = "text" class = "Work" id="Work"/>
+            <br>
+            <label for = "DueDate">DueDate:</label>
+            <input type = "text" class = "DueDate" id="DueDate"/>
+            <br>
+            <div class="dropdown">
+                <button class="dropbtn">Dropdown</button>
+                <div class="dropdown-content">
+                <p href="#">Monday</p>
+                <p href="#">Tuesday</p>
+                <p href="#">Wednesday</p>
+                <p href="#">Thursday</p>
+                <p href="#">Friday</p>
+                <p href="#">Saturday</p>
+                <p href="#">Sunday</p>
+                </div>
             </div>
-        </div>
-        <br>
-        <input type = "submit" value = "Add to Calander" id = "submit" />
-    </form>
+            <br>
+            <input type = "submit" value = "Add to Calander" id = "submit" />
+        </form>
+    </div>
     <div id="main" class="main">
-        <div id="Monday"></div>
-        <div id="Tuesday"></div>
-        <div id="Wednesday"></div>
-        <div id="Thursday"></div>
-        <div id="Friday"></div>
-        <div id="Saturday"></div>
-        <div id="Sunday"></div>
+        <div id="Monday" class="DAY"></div>
+        <div id="Tuesday" class="DAY"></div>
+        <div id="Wednesday" class="DAY"></div>
+        <div id="Thursday" class="DAY"></div>
+        <div id="Friday" class="DAY"></div>
+        <div id="Saturday" class="DAY"></div>
+        <div id="Sunday" class="DAY"></div>
     </div>
     <script src="main.js"></script>
 </body>
