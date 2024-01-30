@@ -6,10 +6,10 @@
     justify-content: center;
 }
 .NewCard{
-    margin: 10px;
-    width: 20%;
-    height: 150%;
-    background-color: rgb(255, 255, 255);
+    margin: 0px;
+    width: 30px;
+    height: 20px;
+    background-color: rgb(219, 17, 17);
     border-radius: 10px;
     border-style: solid;
     border-color: rgb(0, 0, 0);
@@ -59,6 +59,10 @@
     border-style: solid;
     height: auto;
     margin: 8px;
+    flex-wrap: wrap;
+    position: relative;
+    flex-direction: row, column;
+    justify-content: center;
 }
 .Day{
     padding: 10px;
