@@ -69,55 +69,21 @@ function CardCreate(x, targetElement) {
 }
 
 function PRINTER() {
-    DomSelectors.Day1.addEventListener("click", function (e) {
-        e.preventDefault();
-        printdiv = DomSelectors.Monday;
-        CardCreate(CallValues(), printdiv);
-        ResetValues();
-    });
+    const days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
 
-    DomSelectors.Day2.addEventListener("click", function (e) {
-        e.preventDefault();
-        printdiv = DomSelectors.Tuesday;
-        CardCreate(CallValues(), printdiv);
-        ResetValues();
-    });
-    
-    DomSelectors.Day3.addEventListener("click", function (e) {
-        e.preventDefault();
-        printdiv = DomSelectors.Wednesday;
-        CardCreate(CallValues(), printdiv);
-        ResetValues();
-    });
+    for (let i = 0; i < days.length; i++) {
+        DomSelectors[`Day${i + 1}`].addEventListener("click", function (e) {
+            e.preventDefault();
+            const printdiv = DomSelectors[days[i]];
+            CardCreate(CallValues(), printdiv);
+            ResetValues();
+        });
+    }
+};
 
-    DomSelectors.Day4.addEventListener("click", function (e) {
-        e.preventDefault();
-        printdiv = DomSelectors.Thursday;
-        CardCreate(CallValues(), printdiv);
-        ResetValues();
-    });
+PRINTER();
+DomSelectors.Main.addEventListener("click", RemoveCard);
 
-    DomSelectors.Day5.addEventListener("click", function (e) {
-        e.preventDefault();
-        printdiv = DomSelectors.Friday;
-        CardCreate(CallValues(), printdiv);
-        ResetValues();
-    });
-
-    DomSelectors.Day6.addEventListener("click", function (e) {
-        e.preventDefault();
-        printdiv = DomSelectors.Saturday;
-        CardCreate(CallValues(), printdiv);
-        ResetValues();
-    });
-
-    DomSelectors.Day7.addEventListener("click", function (e) {
-        e.preventDefault();
-        printdiv = DomSelectors.Sunday;
-        CardCreate(CallValues(), printdiv);
-        ResetValues();
-    });
-}
 
 PRINTER();
 DomSelectors.Main.addEventListener("click", RemoveCard);
