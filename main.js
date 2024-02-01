@@ -84,6 +84,3 @@ function PRINTER() {
 PRINTER();
 DomSelectors.Main.addEventListener("click", RemoveCard);
 
-
-PRINTER();
-DomSelectors.Main.addEventListener("click", RemoveCard);
